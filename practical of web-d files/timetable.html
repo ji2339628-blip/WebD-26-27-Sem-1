@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f3f6fb;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(31, 41, 55, 0.1);
+        }
+
+        h1, .details {
+            text-align: center;
+        }
+
+        .details {
+            color: #4b5563;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+            margin-top: 24px;
+        }
+
+        caption {
+            padding: 12px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 14px 10px;
+            border: 1px solid #d1d5db;
+            text-align: center;
+        }
+
+        thead th {
+            color: white;
+            background: #2457a7;
+        }
+
+        tbody th {
+            background: #eaf0fa;
+        }
+
+        .break {
+            font-weight: bold;
+            color: #7c4a03;
+            background: #fff2cc;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #6b7280;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>College Timetable</h1>
+        <p class="details">Department of Computer Science | Semester 1</p>
+
+        <div class="table-wrap">
+            <table>
+                <caption>Weekly Class Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">9:00–10:00</th>
+                        <th scope="col">10:00–11:00</th>
+                        <th scope="col">11:00–11:15</th>
+                        <th scope="col">11:15–12:15</th>
+                        <th scope="col">12:15–1:00</th>
+                        <th scope="col">1:00–2:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>Mathematics</td>
+                        <td>Programming in C</td>
+                        <td class="break" rowspan="6">Short Break</td>
+                        <td>Computer Fundamentals</td>
+                        <td class="break" rowspan="6">Lunch</td>
+                        <td>Web Design</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>Programming in C</td>
+                        <td>Mathematics</td>
+                        <td>Electronics Basics</td>
+                        <td>Computer Fundamentals</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>Computer Fundamentals</td>
+                        <td>Web Design</td>
+                        <td>Mathematics</td>
+                        <td>Programming in C</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>Electronics Basics</td>
+                        <td>Programming in C</td>
+                        <td>Web Design</td>
+                        <td>Mathematics</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>Mathematics</td>
+                        <td>Computer Fundamentals</td>
+                        <td>Programming in C</td>
+                        <td>Electronics Basics</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td>Web Design</td>
+                        <td>Electronics Basics</td>
+                        <td>Computer Fundamentals</td>
+                        <td>Study Period</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>Example schedule — replace the subjects, days, and times with your college schedule.</footer>
+    </main>
+</body>
+</html>
